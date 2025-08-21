@@ -1,32 +1,36 @@
 import React from "react";
 
+import schoolLogo1 from "../assets/school-logo.jpg";
+import schoolLogo2 from "../assets/school-logo2.jpg";
+import schoolLogo3 from "../assets/school-logo3.jpg";
+
 const education = [
   {
-    src: "/assets/school-logo.jpg",
+    src: schoolLogo1,
     alt: "School Logo",
     title: "Elementary School",
     year: "2009-2014",
   },
   {
-    src: "/assets/school-logo.jpg",
+    src: schoolLogo1,
     alt: "School Logo",
     title: "Middle School",
     year: "2014-2017",
   },
   {
-    src: "/assets/school-logo.jpg",
+    src: schoolLogo1,
     alt: "School Logo",
     title: "High School",
     year: "2017-2018",
   },
   {
-    src: "/assets/school-logo2.jpg",
+    src: schoolLogo2,
     alt: "School Logo",
     title: "High School",
     year: "2018-2021",
   },
   {
-    src: "/assets/school-logo3.jpg",
+    src: schoolLogo3,
     alt: "School Logo",
     title: "College",
     year: "2022-2025",

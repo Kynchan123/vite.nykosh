@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import Typed from "typed.js";
+import heroImg from "../assets/aa.jpg"; // <-- Import image here
 
 export default function Hero() {
   const typedRef = useRef(null);
@@ -19,7 +20,6 @@ export default function Hero() {
 
   return (
     <section id="header" className="hero-section">
-      {}
       <div className="box">
         {[...Array(10)].map((_, i) => (
           <div key={i}></div>
@@ -28,7 +28,6 @@ export default function Hero() {
 
       <div className="wrapper">
         <div className="hero-container">
-          {/* TEXT SIDE */}
           <div className="hero-text">
             <h2 className="greeting">Hi There,</h2>
             <h1 className="name">
@@ -67,9 +66,9 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* IMAGE SIDE */}
           <div className="hero-img-wrapper">
-            <img src="/assets/aa.jpg" alt="Hero" className="hero-img" />
+            {/* Use imported image */}
+            <img src={heroImg} alt="Hero" className="hero-img" />
           </div>
         </div>
       </div>

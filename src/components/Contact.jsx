@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contact.css";
+import contactImg from "../assets/undraw_coding_joxb.png";
 
 export default function Contact() {
   return (
@@ -15,7 +16,7 @@ export default function Contact() {
         >
           <div className="form-content">
             <div className="contact-image">
-              <img src="/assets/undraw_coding_joxb.png" alt="Contact" />
+              <img src={contactImg} alt="Contact" />
             </div>
             <div className="form-fields">
               <div className="input-box">

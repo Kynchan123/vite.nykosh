@@ -1,4 +1,6 @@
 import React from "react";
+import profileImg from "../assets/a1.jpg"; // Import image
+import resumePDF from "../assets/CVnykosh.pdf"; // Import resume PDF
 
 export default function About() {
   return (
@@ -11,7 +13,7 @@ export default function About() {
 
         <div className="about-content">
           <div className="about-img-wrapper">
-            <img src="/assets/a1.jpg" alt="Profile" className="about-img" />
+            <img src={profileImg} alt="Profile" className="about-img" />
           </div>
 
           <div className="about-text">
@@ -39,7 +41,7 @@ export default function About() {
               <a href="mailto:nykosh25@gmail.com">nykosh25@gmail.com</a>
             </p>
             <div className="btn-group">
-              <a href="assets/CVnykosh.pdf" className="btn btn-resume" download>
+              <a href={resumePDF} className="btn btn-resume" download>
                 <i className="fa-solid fa-download"></i> Resume
               </a>
             </div>

@@ -1,6 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 export default function Footer() {
+  const [isActive, setIsActive] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.pageYOffset + window.innerHeight;
+      const pageHeight = document.documentElement.scrollHeight;
+
+      if (scrollPosition >= pageHeight - 5) {
+        setIsActive(true);
+      } else {
+        setIsActive(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -47,6 +66,7 @@ export default function Footer() {
           </p>
         </div>
       </div>
+
       <div className="social-icons">
         <a href="https://www.linkedin.com/in/nykosh-magsalin-611a6535b/">
           <i className="fa-brands fa-linkedin"></i>
@@ -58,6 +78,31 @@ export default function Footer() {
           <i className="fa-brands fa-instagram"></i>
         </a>
       </div>
+      <a href="#" className="to-top">
+        <i class="fa-solid fa-chevron-up"></i>
+      </a>
+      {/* Scroll to Top Button */}
+      <button
+        className={`to-top ${isActive ? "active" : ""}`}
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        aria-label="Scroll to top"
+        style={{
+          position: "fixed",
+          bottom: "30px",
+          right: "30px",
+          padding: "10px 15px",
+          fontSize: "18px",
+          cursor: "pointer",
+          display: isActive ? "bhidden" : "none",
+          borderRadius: "50%",
+          border: "none",
+          backgroundColor: "#333",
+          color: "#fff",
+          zIndex: 1000,
+        }}
+      >
+        ↑
+      </button>
     </footer>
   );
 }

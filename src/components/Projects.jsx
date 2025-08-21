@@ -1,5 +1,21 @@
 import React from "react";
 
+import prImg from "../assets/pr.png";
+import aeImg from "../assets/ae.png";
+import jsLogo from "../assets/JavaScript-logo.png";
+import weatherAppImg from "../assets/weather-app.png";
+
+import hikigayaVideo from "../assets/hikigaya x yukino.mp4";
+import cradlesVideo from "../assets/cradles.mp4";
+import maririnVideo from "../assets/maririn.mp4";
+import fashionWeekVideo from "../assets/fashion week.mp4";
+
+import nakanoVideo from "../assets/nakano N.mp4";
+import aiHoshinoVideo from "../assets/ai hoshino.mp4";
+import maoFernVideo from "../assets/mao mao x fern.mp4";
+import maomaoMographVideo from "../assets/maomao mograph v1.2.mp4";
+import mographVideo from "../assets/mograph.mp4";
+import yamadaVideo from "../assets/yamada.mp4";
 export default function Projects() {
   return (
     <section id="projects">
@@ -11,73 +27,73 @@ export default function Projects() {
       </div>
 
       <div className="pr-proj">
-        <img src="/assets/pr.png" alt="Adobe Premiere" />
+        <img src={prImg} alt="Adobe Premiere" />
         <span>Adobe Premiere</span>
       </div>
 
       <div className="pr-works">
         <div className="video-wrapper">
           <video controls>
-            <source src="/assets/hikigaya x yukino.mp4" type="video/mp4" />
+            <source src={hikigayaVideo} type="video/mp4" />
           </video>
         </div>
         <div className="video-wrapper">
           <video controls>
-            <source src="/assets/cradles.mp4" type="video/mp4" />
+            <source src={cradlesVideo} type="video/mp4" />
           </video>
         </div>
         <div className="video-wrapper">
           <video controls>
-            <source src="assets/maririn.mp4" type="video/mp4" />
+            <source src={maririnVideo} type="video/mp4" />
           </video>
         </div>
         <div className="video-wrapper">
           <video controls>
-            <source src="/assets/fashion week.mp4" type="video/mp4" />
+            <source src={fashionWeekVideo} type="video/mp4" />
           </video>
         </div>
       </div>
 
       <div className="ae-proj">
-        <img src="/assets/ae.png" alt="After Effects" />
+        <img src={aeImg} alt="After Effects" />
         <span>After Effects</span>
       </div>
 
       <div className="ae-works">
         <div className="video-wrapper">
           <video controls>
-            <source src="/assets/nakano N.mp4" type="video/mp4" />
+            <source src={nakanoVideo} type="video/mp4" />
           </video>
         </div>
         <div className="video-wrapper">
           <video controls>
-            <source src="/assets/ai hoshino.mp4" type="video/mp4" />
+            <source src={aiHoshinoVideo} type="video/mp4" />
           </video>
         </div>
         <div className="video-wrapper">
           <video controls>
-            <source src="/assets/mao mao x fern.mp4" type="video/mp4" />
+            <source src={maoFernVideo} type="video/mp4" />
           </video>
         </div>
         <div className="video-wrapper">
           <video controls>
-            <source src="/assets/maomao mograph v1.2.mp4" type="video/mp4" />
+            <source src={maomaoMographVideo} type="video/mp4" />
           </video>
         </div>
         <div className="video-wrapper">
           <video controls>
-            <source src="/assets/mograph.mp4" type="video/mp4" />
+            <source src={mographVideo} type="video/mp4" />
           </video>
         </div>
         <div className="video-wrapper">
           <video controls>
-            <source src="/assets/yamada.mp4" type="video/mp4" />
+            <source src={yamadaVideo} type="video/mp4" />
           </video>
         </div>
       </div>
 
       <div className="js-proj">
-        <img src="/assets/JavaScript-logo.png" alt="Javascript" />
+        <img src={jsLogo} alt="Javascript" />
         <span>Javascript</span>
       </div>
 
@@ -87,7 +103,7 @@ export default function Projects() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="/assets/weather-app.png" alt="Weather App" />
+          <img src={weatherAppImg} alt="Weather App" />
           <p>Weather App</p>
         </a>
       </div>

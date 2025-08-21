@@ -1,22 +1,26 @@
 import React from "react";
 
+import certImg from "../assets/cert.jpg";
+import htmlCertImg from "../assets/html-cert.jpg";
+import cssCertImg from "../assets/css-cert.jpg";
+
 const certificates = [
   {
-    src: "/assets/cert.jpg",
+    src: certImg,
     alt: "Technical Core Certificate",
     title: "Technical Core",
     year: "2024",
     status: "Completed",
   },
   {
-    src: "/assets/html-cert.jpg",
+    src: htmlCertImg,
     alt: "Introduction To HTML Certificate",
     title: "Introduction To HTML",
     year: "2025",
     status: "Completed",
   },
   {
-    src: "/assets/css-cert.jpg",
+    src: cssCertImg,
     alt: "Introduction To CSS Certificate",
     title: "Introduction To CSS",
     year: "2025",
