@@ -26,7 +26,7 @@ const education = [
   {
     src: schoolLogo2,
     alt: "School Logo",
-    title: "High School",
+    title: "Senior High School",
     year: "2018-2021",
   },
   {
