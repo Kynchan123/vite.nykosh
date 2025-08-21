@@ -477,8 +477,8 @@ nav .navlinks li a{
 
   filter: grayscale(100%);
 }
-/* Responsive Layout */
-@media (min-width: 768px) {
+
+@media (min-width: 600px) {
   .hero-container {
     flex-direction: row;
     justify-content: space-between;
@@ -1077,10 +1077,21 @@ footer {
 
 /* ========== Responsive (Mobile) CSS ========== */
 @media only screen and (max-width: 600px) {
-
-    body, html{
+ body, html {
     overflow-x: hidden;
-}
+    width: 100%;
+    margin: 0;
+  }
+    #header {
+    padding: 0; /* Remove extra padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    background: var(--bg-color);
+  }
   .header-text{
     margin-top: 100%;
     font-size: 16px;
@@ -1120,11 +1131,33 @@ nav ul .fas{
         cursor: pointer;
     }
 
-  .hero-header {
-        padding: 50px 0;
+   .hero-header {
+    padding: 50px 0px;
+    text-align: center; /* Center the content */
   }
-  .hero-pic {
-  width: 250px;
+  .header-text h1{
+       font-size: 30px;
+    }
+
+  
+  .hero-text {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px; 
+   
+  }
+
+  .hero-text p {
+    font-size: 18px;
+   
+  }
+
+  /* Hero Image */
+  .hero-img-wrapper {
+     width: 250px;
   height: 250px;
   border-radius: 50%;
   overflow: hidden;
@@ -1133,91 +1166,209 @@ nav ul .fas{
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-}
-  /* Hero container and text */
- .wrapper .hero-pic {
-    width: 350px;
-    height: 350px;
   }
 
-  .hero-pic img {
-  width: 100%;
+  .hero-img-wrapper img {
+   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
-}
-  .hero-text h1 {
-font-size: 32px; 
-    }
-.hero-text p {
-font-size: 18px; 
-    }
-.sub-title{
+  }
+  /* about  */
+  .highlight{
 font-size: 40px;
     }
-.about-col-1, .about-col-2{
+.about-img-wrapper{
 flex-basis: 100%;
 display: flex;
 flex-direction: column; 
 align-items: center; 
     }
-.about-col-1 img {
-width: 80%; 
-margin-bottom: 20px; 
+    .about-img-wrapper img {
+width: 100%; 
+margin-bottom: 0px; 
     }
-.about-col-2{
-font-size: 14px;
-    }
-.descrip{
-font-size: 18px;
+    .about-text{
+      font-size: 18px;
 margin-top: 20px;
     }
-.tab-links{
-font-size: 16px;
-margin-right: 20px;
-    }
-.contact-left, .contact-right{
-flex-basis: 100%;
-    }
-.education {
-padding: 20px 0;
-    }
 
-.education-grid {
-grid-template-columns: 1fr;
-    }
-
-.education-item {
-flex: 1 1 100%; 
-margin-bottom: 20px; 
-display: flex;
-justify-content: center;
-text-align: center;
-    }
-
-.education-item img {
-width: 70%; 
-    }
-
-.sub-title {
-font-size: 28px; 
-    }
-.ae-works, .pr-works {
-margin-left: auto;
-margin-right: auto;
-display: block; 
-text-align: center;
+  /* Skills Section */
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    justify-items: center; /* Center the grid items */
   }
-  .video-wrapper {
-  width: 80%;
-  max-width: 100%;
-  aspect-ratio: 16 / 9;
-  margin: 0 auto;
-}
 
-.video-wrapper video {
-  width: 90%;
-  height: auto;
-  object-fit: contain;
+  .skill-card {
+    width: 90%; /* Decrease width to fit better */
+    text-align: center;
+    padding: 20px;
+  }
+
+  .skill-card p {
+    font-size: 14px;
+  }
+
+  /* Projects Section */
+    #projects {
+    padding: 40px 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+  }
+
+  /* Projects Header */
+  .p-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+ .pr-proj, .ae-proj, .js-proj {
+    width: 100%;
+    align-items: center;
+    max-width: 250px; 
+    margin: 20px auto;
+    text-align: center;
+  }
+  .ae-proj img{
+    max-width: 150px;
+     width: 100%;
+    height: auto;
+    object-fit:cover; 
+    margin-bottom: 10px;
+  }
+
+  .pr-proj img, .js-proj img {
+    width: 100%;
+    height: auto;
+    object-fit:cover; 
+    max-width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .pr-proj span, .ae-proj span, .js-proj span {
+    font-size: 16px;
+    color: var(--text-color);
+    font-weight: 600;
+  }
+
+
+  .video-wrapper {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto 20px;
+    aspect-ratio: 16/9;
+  }
+
+ 
+  .sub-title {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .js-works p {
+    font-size: 14px; 
+  }
+
+  .js-works a img {
+    width: 100%; 
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+  }
 }
+  /* Education Section */
+  .education-card {
+    flex-direction: column;
+    width: 90%;
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 15px;
+    text-align: center;
+    margin: 30px;
+  }
+
+  .education-card img {
+    width: 70%;
+    margin-bottom: 15px;
+  }
+
+  /* Certificates Section */
+  .certificate-card {
+    flex-direction: column;
+    width: 90%;
+    max-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+    margin: 30px;
+  }
+
+  .certificate-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+
+  .certificate-info h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .certificate-info p {
+    font-size: 14px;
+    color: var(--accent-color);
+  }
+
+  /* Contact Section */
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center contact form */
+  }
+
+  .contact-form {
+    width: 90%;
+    max-width: 450px;
+    padding: 20px;
+    text-align: center; /* Center form elements */
+  }
+
+  .input-box input,
+  .input-box textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  /* Footer */
+  footer {
+    padding: 20px;
+    text-align: center; /* Center footer content */
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left ul {
+    text-align: center;
+    padding: 0;
+  }
+
+  .footer-right {
+    text-align: center;
+  }
 }

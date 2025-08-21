@@ -26,7 +26,6 @@ export default function Skills() {
       <div className="skills-container">
         <h1 className="skills-title">
           <i className="fa-solid fa-laptop-code"></i> Skills{" "}
-          <span className="highlight">& Abilities</span>
         </h1>
 
         <div className="skills-grid">
