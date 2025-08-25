@@ -3,6 +3,7 @@ import React from "react";
 import certImg from "../assets/cert.jpg";
 import htmlCertImg from "../assets/html-cert.jpg";
 import cssCertImg from "../assets/css-cert.jpg";
+import jscertImg from "../assets/js-cert.jpg";
 
 const certificates = [
   {
@@ -23,6 +24,13 @@ const certificates = [
     src: cssCertImg,
     alt: "Introduction To CSS Certificate",
     title: "Introduction To CSS",
+    year: "2025",
+    status: "Completed",
+  },
+  {
+    src: jscertImg,
+    alt: "Introduction To JavaScript Certificate",
+    title: "Introduction To JavaScript",
     year: "2025",
     status: "Completed",
   },

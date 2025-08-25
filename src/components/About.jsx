@@ -1,6 +1,6 @@
 import React from "react";
 import profileImg from "../assets/a1.jpg"; // Import image
-import resumePDF from "../assets/CVnykosh.pdf"; // Import resume PDF
+import resumePDF from "../assets/Resume-nykosh.pdf"; // Import resume PDF
 
 export default function About() {
   return (
