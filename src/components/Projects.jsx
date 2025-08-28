@@ -4,6 +4,7 @@ import prImg from "../assets/pr.png";
 import aeImg from "../assets/ae.png";
 import jsLogo from "../assets/JavaScript-logo.png";
 import weatherAppImg from "../assets/weather-app.png";
+import tictacImg from "../assets/tictac.png";
 
 import hikigayaVideo from "../assets/hikigaya x yukino.mp4";
 import cradlesVideo from "../assets/cradles.mp4";
@@ -16,6 +17,7 @@ import maoFernVideo from "../assets/mao mao x fern.mp4";
 import maomaoMographVideo from "../assets/maomao mograph v1.2.mp4";
 import mographVideo from "../assets/mograph.mp4";
 import yamadaVideo from "../assets/yamada.mp4";
+
 export default function Projects() {
   return (
     <section id="projects">
@@ -30,7 +32,6 @@ export default function Projects() {
         <img src={prImg} alt="Adobe Premiere" />
         <span>Adobe Premiere</span>
       </div>
-
       <div className="pr-works">
         <div className="video-wrapper">
           <video controls>
@@ -58,7 +59,6 @@ export default function Projects() {
         <img src={aeImg} alt="After Effects" />
         <span>After Effects</span>
       </div>
-
       <div className="ae-works">
         <div className="video-wrapper">
           <video controls>
@@ -98,14 +98,63 @@ export default function Projects() {
       </div>
 
       <div className="js-works">
-        <a
-          href="https://kynchan123.github.io/weather-app/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={weatherAppImg} alt="Weather App" />
-          <p>Weather App</p>
-        </a>
+        <div className="js-wrapper">
+          <a
+            href="https://weather-app-five-black-64.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-card"
+          >
+            <img src={weatherAppImg} alt="Weather App" />
+            <div className="overlay">
+              <h3>Weather App</h3>
+              <p>
+                This is a JS-based Weather App created as a practice for my
+                coding skills.
+              </p>
+              <div className="button-container">
+                <button className="view-btn">View</button>
+                <a
+                  href="https://github.com/Kynchan123/weather-app/blob/main/index.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="code-btn">Code</button>
+                </a>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div className="js-works">
+        <div className="js-wrapper">
+          <a
+            href="https://tic-tac-toe-vert-five-40.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-card"
+          >
+            <img src={tictacImg} alt="Tic Tac Toe" />
+            <div className="overlay">
+              <h3>Tic Tac Toe</h3>
+              <p>
+                This is a JS-based Tic Tac Toe with PvP and AI mode available
+                created as a practice for my coding skills.
+              </p>
+              <div className="button-container">
+                <button className="view-btn">View</button>
+                <a
+                  href="https://github.com/Kynchan123/tic-tac-toe/blob/main/index.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="code-btn">Code</button>
+                </a>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
   );
