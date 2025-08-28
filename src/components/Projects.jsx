@@ -5,6 +5,7 @@ import aeImg from "../assets/ae.png";
 import jsLogo from "../assets/JavaScript-logo.png";
 import weatherAppImg from "../assets/weather-app.png";
 import tictacImg from "../assets/tictac.png";
+import snakeGameImg from "../assets/snakeGame.png";
 
 import hikigayaVideo from "../assets/hikigaya x yukino.mp4";
 import cradlesVideo from "../assets/cradles.mp4";
@@ -115,7 +116,7 @@ export default function Projects() {
               <div className="button-container">
                 <button className="view-btn">View</button>
                 <a
-                  href="https://github.com/Kynchan123/weather-app/blob/main/index.html"
+                  href="https://github.com/Kynchan123/weather-app"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -139,13 +140,43 @@ export default function Projects() {
             <div className="overlay">
               <h3>Tic Tac Toe</h3>
               <p>
-                This is a JS-based Tic Tac Toe with PvP and AI mode available
-                created as a practice for my coding skills.
+                This is a JS-based basic Tic Tac Toe with PvP and AI mode
+                available created as a practice for my coding skills.
               </p>
               <div className="button-container">
                 <button className="view-btn">View</button>
                 <a
-                  href="https://github.com/Kynchan123/tic-tac-toe/blob/main/index.html"
+                  href="https://github.com/Kynchan123/tic-tac-toe"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="code-btn">Code</button>
+                </a>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div className="js-works">
+        <div className="js-wrapper">
+          <a
+            href="https://snake-game-eight-coral.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-card"
+          >
+            <img src={snakeGameImg} alt="Snake Game" />
+            <div className="overlay">
+              <h3>Snake Game</h3>
+              <p>
+                This is a JS-based basic Snake Game created as a practice for my
+                coding skills.
+              </p>
+              <div className="button-container">
+                <button className="view-btn">View</button>
+                <a
+                  href="https://github.com/Kynchan123/snake-game"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
