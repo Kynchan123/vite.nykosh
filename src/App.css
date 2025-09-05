@@ -754,14 +754,14 @@ filter: grayscale(0%);
 .js-works {
  display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Adds space between the cards */
-  justify-content: center; /* Centers the cards horizontally */
+  gap: 20px; 
+  justify-content: center; 
   padding: 20px;
 }
 .js-wrapper{
- position: relative; /* Ensure that overlay stays on top of the image */
+ position: relative; 
   width: 100%;
-  max-width: 280px; /* Ensures all cards have consistent width */
+  max-width: 280px; 
   height: 100%;
   aspect-ratio: 16 / 9;
   margin: 0 auto;
@@ -781,19 +781,19 @@ filter: grayscale(0%);
 }
 
 .js-works a:hover {
-  transform: scale(1.05); /* Slight scale effect on hover */
+  transform: scale(1.05); 
 }
 
 .js-works img {
   width: 100%;
-  height: 70%; /* Ensure the image takes most of the card's height */
+  height: 70%; 
   object-fit: cover;
   border-radius: 8px;
   transition: opacity 0.3s ease;
 }
 
 .js-works a:hover img {
-  opacity: 0.6; /* Reduce opacity when hovered to emphasize overlay */
+  opacity: 0.6; 
 }
 
 .overlay {
@@ -816,7 +816,7 @@ filter: grayscale(0%);
 }
 
 .js-works a:hover .overlay {
-  opacity: 1; /* Show the overlay on hover */
+  opacity: 1; 
 }
 
 .overlay h3 {
@@ -847,8 +847,8 @@ filter: grayscale(0%);
 }
 
 .view-btn:hover, .code-btn:hover {
-  background-color: var(--accent-color); /* Change color on hover */
-  transform: scale(1.05); /* Slight scale effect on hover */
+  background-color: var(--accent-color); 
+  transform: scale(1.05); 
 }
 
 .view-btn {

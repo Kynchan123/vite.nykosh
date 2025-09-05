@@ -99,7 +99,7 @@ export default function Projects() {
       </div>
 
       <div className="js-works">
-        <div className="js-wrapper">
+        <div className="video-wrapper">
           <a
             href="https://weather-app-five-black-64.vercel.app/"
             target="_blank"
@@ -126,10 +126,8 @@ export default function Projects() {
             </div>
           </a>
         </div>
-      </div>
 
-      <div className="js-works">
-        <div className="js-wrapper">
+        <div className="video-wrapper">
           <a
             href="https://tic-tac-toe-vert-five-40.vercel.app/"
             target="_blank"
@@ -156,10 +154,8 @@ export default function Projects() {
             </div>
           </a>
         </div>
-      </div>
 
-      <div className="js-works">
-        <div className="js-wrapper">
+        <div className="video-wrapper">
           <a
             href="https://snake-game-eight-coral.vercel.app/"
             target="_blank"
